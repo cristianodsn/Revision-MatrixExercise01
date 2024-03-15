@@ -8,9 +8,9 @@
             int largestNumber = GetLargestLengthNumber(mat);
             string[,] stringMat = ConvertMatrixToString(mat);
 
-            for(int i = 0; i < mat.GetLength(0); i++)
+            for (int i = 0; i < mat.GetLength(0); i++)
             {
-                for(int j = 0; j < mat.GetLength(1); j++)
+                for (int j = 0; j < mat.GetLength(1); j++)
                 {
                     int number = int.Parse(stringMat[i, j]);
                     stringMat[i, j] = EqualizingPlace(number, largestNumber, '0');
