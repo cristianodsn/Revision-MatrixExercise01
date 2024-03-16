@@ -11,11 +11,15 @@ try
         
         
         for (int j = 0; j < quantity; j++)
-        {            
+        {
+            Console.WriteLine("Matrix Information:");
+            mat.PrintIntMatrix();
+            Console.WriteLine();
             Console.WriteLine("Enter the velues of the matrix:");
             Console.WriteLine($"Row {i + 1}, Column {j + 1}");
             mat[i, j] = int.Parse(Console.ReadLine());
-            mat.PrintIntMatrix();            
+            Console.Clear();          
+
         }
     }
 }

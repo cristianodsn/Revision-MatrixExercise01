@@ -32,11 +32,13 @@
 
         public static void PrintIntMatrix(this int[,] mat)
         {
-            for (int i = 0; i < mat.GetLength(0); i++)
+            string[,] matString = PrintMatrix.GenerateStringMatrix(mat);
+
+            for (int i = 0; i < matString.GetLength(0); i++)
             {
-                for (int j = 0; j < mat.GetLength(1); j++)
+                for (int j = 0; j < matString.GetLength(1); j++)
                 {
-                    Console.Write(mat[i, j]);
+                    Console.Write(matString[i, j]);
                     Console.Write(" ");
                 }
                 Console.WriteLine();
