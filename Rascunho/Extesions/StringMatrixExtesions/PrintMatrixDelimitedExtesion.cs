@@ -1,6 +1,6 @@
-﻿namespace Rascunho
+﻿namespace Rascunho.Extesions.StringMatrixExtesions
 {
-    internal static class PrintMatrixDelimited
+    internal static class PrintMatrixDelimitedExtension
     {
         public static void PrintLimitedDiagonalMConsole(this string[,] matrix)
         {
